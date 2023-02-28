@@ -117,7 +117,7 @@ const Game:React.FC<Props> = ({setState, state, setData, data, words}) => {
 
     return (
         <div className='mt-[60px]'>
-            {/* <p className="mt-2 text-center text-xl text-gray-600">
+            {/* <p className="mt-2 text-center text-md text-gray-600">
                 Skor:{' '}
                 <span className="font-medium text-white hover:text-gray-300">
                 {score}
