@@ -140,8 +140,8 @@ const Game:React.FC<Props> = ({setState, state, setData, data, words}) => {
             </p> */}
             {
                 currentWord === words[1]?
-                <h2 className="mt-6 text-center text-[136px] font-extrabold text-white">{currentWord}</h2>:
-                <h2 className="mt-6 text-center text-[136px] font-extrabold text-white">{currentWord}</h2>
+                <h2 className="mt-6 text-center text-[100px] font-extrabold text-white">{currentWord}</h2>:
+                <h2 className="mt-6 text-center text-[100px] font-extrabold text-white">{currentWord}</h2>
             }
         </div>
     )
