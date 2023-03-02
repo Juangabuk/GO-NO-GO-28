@@ -102,7 +102,7 @@ const Game:React.FC<Props> = ({setState, state, setData, data, words}) => {
 
     React.useEffect(()=>counter>=1?nextWord(true):undefined,[counter, nextWord])
 
-    React.useEffect(()=>(word1===0 && word2===0)?setState(state+1):undefined,[setState, word1, word2])
+    React.useEffect(()=>(word1===0 && word2===0)?setState(state+1):undefined,[setState, word1, word2, word3])
 
     React.useEffect(()=>{
 
