@@ -26,8 +26,8 @@ type UserData = {
 }
 
 const allSessions = [
-    ["NARKOBA", "NAPZA","KONTOL"],
-    ["NARKOBA", "NAPZA","HALO"],
+    ["NARKOBA", "NAPZA","NAKAL"],
+    ["NARKOBA", "NAPZA","BAIK"],
     ["NAPZA", "NARKOBA"],
     ["NAPZA", "NARKOBA"],
     ["PECANDU", "PENYALAHGUNA"],
