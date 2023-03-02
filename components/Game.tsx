@@ -80,17 +80,18 @@ const Game:React.FC<Props> = ({setState, state, setData, data, words}) => {
                 }, 50)
                 if(currentWord!=="start") setWord1(word1-1)
             }
-            if(prob<0.5) {
+            if (prob<0.5) {
                 setTimeout(()=>{
                     setCurrentWord(words[1])
                 }, 50)
-                if(currentWord!=="start") setWord2(word2-1)
-            }
+                if(currentWord!=="start") setWord2(word2-1) {
+                
             else {
                 setTimeout(()=>{
                     setCurrentWord(words[2])
                 }, 50)
                 if(currentWord!=="start") setWord3(word3-1)
+                
             }
         }
         
