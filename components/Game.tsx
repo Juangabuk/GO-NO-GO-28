@@ -50,20 +50,22 @@ const Game:React.FC<Props> = ({setState, state, setData, data, words}) => {
 
         const isWord1 = word1>0
         const isWord2 = word2>0
+        const isWord3 = word3>0
+
         
-        if(!isWord1 && isWord2){
+        if(!isWord1 && isWord2 && isWord3){
             setCurrentWord(words[1])
             setWord2(word2-1)
             return
         }
 
-        if(!isWord2 && isWord1){
+        if(!isWord1 && isWord2 && isWord3){
             setCurrentWord(words[0])
             setWord1(word1-1)
             return
         }
 
-        if(isWord1 && isWord2){
+        if(!isWord1 && isWord2 && isWord3){
             const prob = Math.random()
             setCurrentWord(" ")
             if(prob<0.5) {
@@ -80,7 +82,7 @@ const Game:React.FC<Props> = ({setState, state, setData, data, words}) => {
             }
         }
         
-    },[word1, word2, currentWord, counter]) 
+    },[word1, word2, word3 currentWord, counter]) 
 
     React.useEffect(()=>{
 
@@ -98,7 +100,7 @@ const Game:React.FC<Props> = ({setState, state, setData, data, words}) => {
             // console.log(seconds)
         },10))
 
-    }, [time, word1, word2])
+    }, [time, word1, word2, word3])
 
     React.useEffect(()=>counter>=1?nextWord(true):undefined,[counter, nextWord])
 
