@@ -23,6 +23,7 @@ type Props = {
 const Game:React.FC<Props> = ({setState, state, setData, data, words}) => {
     const [word1, setWord1] = React.useState<number>(7)
     const [word2, setWord2] = React.useState<number>(7)
+    const [word3, setWord3] = React.useState<number>(7)
     const [currentWord, setCurrentWord] = React.useState<string>("start")
     const [score, setScore] = React.useState<number>(0)
     const [time, setTime] = React.useState<Date|null>(null)
