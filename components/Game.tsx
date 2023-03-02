@@ -67,7 +67,7 @@ const Game:React.FC<Props> = ({setState, state, setData, data, words}) => {
 
         if(!isWord1 && isWord2 && isWord3){
             setCurrentWord(words[0])
-            setWord1(word3-1)
+            setWord3(word3-1)
             return
         }
 
